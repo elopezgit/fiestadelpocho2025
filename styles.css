@@ -1,0 +1,53 @@
+/* styles.css */
+
+body {
+  background-color: #001f49; /* Color exacto del fondo del logo */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: #f8f9fa;
+}
+
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffc107;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+i {
+  color: #f8f9fa;
+  transition: color 0.3s ease;
+}
+
+i:hover {
+  color: #ffc107;
+}
+
+.container {
+  padding-bottom: 60px;
+}
+
+span {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  span {
+    font-size: 0.9rem;
+  }
+
+  i {
+    font-size: 1.7rem;
+  }
+}

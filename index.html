@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poncho 2025</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      background-color: #001f49;
+      background-image: radial-gradient(#002a5c 0.8px, transparent 0.8px);
+      background-size: 20px 20px;
+      animation: starsMove 60s linear infinite;
+    }
+
+    @keyframes starsMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    .link-hover-effect {
+      transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .link-hover-effect:hover {
+      transform: scale(1.1);
+      color: #ffc107 !important;
+      text-shadow: 0 0 8px rgba(255, 193, 7, 0.5);
+    }
+
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="text-light text-center">
+  <div class="container py-5 fade-in">
+    <img src="img/logo_poncho2025_mejorado.png" alt="Poncho 2025" class="img-fluid mb-5" style="max-width: 300px;">
+
+    <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-center">
+      <div class="col">
+        <a href="https://wa.me/5493834625499?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20Fiesta%20del%20Poncho%202025" class="text-decoration-none text-light link-hover-effect" target="_blank">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fab fa-whatsapp fa-2x mb-2"></i>
+            <span>Whatsapp</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.tiktok.com/@fiestanacionaldelponcho" class="text-decoration-none text-light link-hover-effect" target="_blank">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fab fa-tiktok fa-2x mb-2"></i>
+            <span>TikTok</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/fiestanacionaldelponcho?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-decoration-none text-light link-hover-effect" target="_blank">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fab fa-instagram fa-2x mb-2"></i>
+            <span>Instagram</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none text-light link-hover-effect" data-bs-toggle="modal" data-bs-target="#modalArtesanos">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fas fa-list fa-2x mb-2"></i>
+            <span>Lista de artesanos</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.google.com/maps/place/Predio+Ferial+Catamarca/" class="text-decoration-none text-light link-hover-effect" target="_blank">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fas fa-map fa-2x mb-2"></i>
+            <span>Mapa del evento</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.youtube.com/@culturacatamarca" class="text-decoration-none text-light link-hover-effect" target="_blank">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fab fa-youtube fa-2x mb-2"></i>
+            <span>YouTube</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="text-decoration-none text-light link-hover-effect" onclick="alert('Programa de actividades disponible próximamente')">
+          <div class="d-flex flex-column align-items-center">
+            <i class="fas fa-calendar-alt fa-2x mb-2"></i>
+            <span>Programa de actividades</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+<div class="modal fade" id="modalArtesanos" tabindex="-1" aria-labelledby="modalArtesanosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalArtesanosLabel">Lista de artesanos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¡Muy pronto vas a poder consultar toda la lista completa de artesanos participantes!
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMapaEvento" tabindex="-1" aria-labelledby="modalMapaEventoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalMapaEventoLabel">Mapa del evento</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El mapa interactivo del predio estará disponible próximamente para ayudarte a ubicarte mejor.
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPrograma" tabindex="-1" aria-labelledby="modalProgramaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalProgramaLabel">Programa de actividades</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Muy pronto podrás ver el cronograma completo de actividades de la Fiesta del Poncho 2025.
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Asignar el botón del mapa al modal
+  document.addEventListener("DOMContentLoaded", () => {
+    const mapButton = document.querySelector('a[href*="maps"][data-bs-toggle]');
+    if (mapButton) {
+      mapButton.setAttribute("data-bs-toggle", "modal");
+      mapButton.setAttribute("data-bs-target", "#modalMapaEvento");
+      mapButton.removeAttribute("href");
+      mapButton.removeAttribute("target");
+    }
+
+    const programaButton = document.querySelector("a[onclick]");
+    if (programaButton) {
+      programaButton.setAttribute("data-bs-toggle", "modal");
+      programaButton.setAttribute("data-bs-target", "#modalPrograma");
+      programaButton.removeAttribute("onclick");
+    }
+  });
+</script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
